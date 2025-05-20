@@ -1,13 +1,13 @@
 {
-    "name": "mapado/iso7064-mod-97-10",
-    "description": "Algorithm that calculates number of control, described in ISO 7064, Mod 97 10. Normally used to validate IBAN and nibs of bank accounts.",
-    "require": {
-        "phpunit/phpunit": "^10.5"
-    },
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Mapado\\Iso7064Mod9710\\": "src/"
-        }
+  "name": "mapado/iso7064-mod-97-10",
+  "description": "Algorithm that calculates number of control, described in ISO 7064, Mod 97 10. Normally used to validate IBAN and nibs of bank accounts.",
+  "license": "MIT",
+  "require-dev": {
+    "phpunit/phpunit": "^10.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mapado\\Iso7064Mod9710\\": "src/"
     }
+  }
 }
