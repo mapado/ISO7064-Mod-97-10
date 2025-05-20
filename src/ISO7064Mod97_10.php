@@ -27,11 +27,11 @@ class ISO7064Mod97_10
 
 		$c = $this->checkCode("$str");
 		if ($c == 0) {
-			return (int)"${str}00";
+			return (int)"{$str}00";
 		} elseif ($c < 10) {
-			return (int)"${str}0${c}";
+			return (int)"{$str}0{$c}";
 		} else {
-			return (int)"${str}${c}";
+			return (int)"{$str}{$c}";
 		}
 	}
 	function verify($str)
@@ -41,7 +41,7 @@ class ISO7064Mod97_10
 
 	function checkCode($str)
 	{
-		return (98 - ($this->computeCheck("${str}00") % 97));
+		return (98 - ($this->computeCheck("{$str}00") % 97));
 	}
 
 	function computeCheck($str)
@@ -90,11 +90,11 @@ class Simple_ISO7064Mod97_10
 	{
 		$c = $this->computeCheck($str);
 		if ($c == 0) {
-			return (int)"${str}00";
+			return (int)"{$str}00";
 		} elseif ($c < 10) {
-			return (int)"${str}0${c}";
+			return (int)"{$str}0{$c}";
 		} else {
-			return (int)"${str}${c}";
+			return (int)"{$str}{$c}";
 		}
 	}
 	function verify($str)
