@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         stopOnFailure="false"
+         failOnWarning="true"
+         failOnRisky="true"
+         failOnIncomplete="true"
+         failOnSkipped="true"
+         failOnDeprecation="true">
+    <testsuites>
+        <testsuite name="ISO7064Mod97_10 Test Suite">
+            <directory>./Tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <ini name="error_reporting" value="E_ALL"/>
+        <ini name="display_errors" value="1"/>
+    </php>
+</phpunit>
