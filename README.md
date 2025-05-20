@@ -1,14 +1,8 @@
-[![Build Status](https://secure.travis-ci.org/stvkoch/ISO7064-Mod-97-10.png)](http://travis-ci.org/stvkoch/ISO7064-Mod-97-10)
-
-
-Description
-===========
+# Description
 
 Algorithm that calculates number of control, described in ISO 7064, Mod 97 10. Normally used to validate IBAN and nibs of bank accounts.
 
-
-Methods
-=======
+# Methods
 
     class ISO7064Mod97_10
         - encode( string/integer $input )
@@ -24,8 +18,7 @@ Methods
         - getData( string/integer $input )
             return value of input without check digits
 
-Example
-=======
+# Example
 
     require 'ISO7064Mod97_10.php'
     $c = new ISO7064Mod97_10();
@@ -39,5 +32,4 @@ Example
     var_dump($c->verify($validNumber));
     var_dump($c->verify($invalidNumber));
 
-
- <stvkoch at gmail.com> Steven Koch
+<stvkoch at gmail.com> Steven Koch
